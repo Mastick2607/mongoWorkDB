@@ -1,0 +1,174 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+  {
+    _id: 1,
+    name: "Prodcut 1",
+    price: 100
+  },
+  {
+    _id: 2,
+    name: "Prodcut 2",
+    price: 20
+  },
+  {
+    _id: 3,
+    name: "Prodcut 3",
+    price: 120
+  },
+  {
+    _id: 4,
+    name: "Prodcut 4",
+    price: 120
+  }
+])
+
+
+db.products.insertMany([
+    {
+      title: "Collar Acolchado para Perros",
+      price: 15.99,
+      description: "Collar ajustable y acolchado para perros de tamaño mediano a grande.",
+      category: "Mascotas",
+      image: "collar_perros.jpg"
+    },
+    {
+      title: "Comedero Automático para Gatos",
+      price: 29.50,
+      description: "Comedero programable para gatos con dispensador de comida automático.",
+      category: "Mascotas",
+      image: "comedero_gatos.jpg"
+    },
+    {
+      title: "Juguete Interactivo para Perros",
+      price: 9.99,
+      description: "Juguete interactivo con dispensador de premios para perros activos.",
+      category: "Mascotas",
+      image: "juguete_perros.jpg"
+    },
+    {
+      title: "Arnés Reflectante para Caminatas Nocturnas",
+      price: 19.99,
+      description: "Arnés ajustable con bandas reflectantes para mayor visibilidad nocturna.",
+      category: "Mascotas",
+      image: "arnes_reflectante.jpg"
+    },
+    {
+      title: "Cama Suave para Gatos",
+      price: 24.99,
+      description: "Cama acogedora y suave para gatos con cojín reversible.",
+      category: "Mascotas",
+      image: "cama_gatos.jpg"
+    },
+    {
+      title: "Rascador para Gatos de Altura",
+      price: 39.99,
+      description: "Rascador de sisal con plataformas y juguetes para mantener entretenidos a los gatos.",
+      category: "Mascotas",
+      image: "rascador_gatos.jpg"
+    },
+    {
+      title: "Correa Retráctil para Paseos",
+      price: 12.50,
+      description: "Correa retráctil para perros pequeños y medianos con sistema de bloqueo.",
+      category: "Mascotas",
+      image: "correa_perros.jpg"
+    },
+    {
+      title: "Juguete Peluche para Gatos",
+      price: 6.99,
+      description: "Peluche suave con catnip para entretener a los gatos durante horas.",
+      category: "Mascotas",
+      image: "juguete_peluche_gatos.jpg"
+    },
+    {
+      title: "Transportín Portátil para Mascotas",
+      price: 34.99,
+      description: "Transportín resistente y plegable para gatos y perros pequeños.",
+      category: "Mascotas",
+      image: "transportin_mascotas.jpg"
+    },
+    {
+      title: "Hueso de Juguete para Masticar",
+      price: 8.99,
+      description: "Hueso de goma duradero para perros que disfrutan masticando.",
+      category: "Mascotas",
+      image: "hueso_perros.jpg"
+    },
+    {
+      title: "Arena Aglomerante para Gatos",
+      price: 16.50,
+      description: "Arena de bentonita aglomerante para una fácil limpieza y control de olores.",
+      category: "Mascotas",
+      image: "arena_gatos.jpg"
+    },
+    {
+      title: "Cepillo para Gatos de Pelo Largo",
+      price: 11.99,
+      description: "Cepillo suave y ergonómico para cepillar el pelo largo de los gatos.",
+      category: "Mascotas",
+      image: "cepillo_gatos.jpg"
+    },
+    {
+      title: "Snacks Naturales para Perros",
+      price: 7.50,
+      description: "Snacks naturales y saludables para premiar a los perros durante el entrenamiento.",
+      category: "Mascotas",
+      image: "snacks_perros.jpg"
+    },
+    {
+      title: "Cama Calentada para Mascotas",
+      price: 49.99,
+      description: "Cama con función de calentamiento para proporcionar comodidad a mascotas en días fríos.",
+      category: "Mascotas",
+      image: "cama_calentada.jpg"
+    },
+    {
+      title: "Juguete Pelota con Sonido para Gatos",
+      price: 5.99,
+      description: "Pelota con sonido crujiente para gatos que adoran jugar con juguetes ruidosos.",
+      category: "Mascotas",
+      image: "pelota_sonido_gatos.jpg"
+    },
+    {
+      title: "Collar Antipulgas para Perros",
+      price: 18.99,
+      description: "Collar repelente de pulgas y garrapatas para perros de todas las razas.",
+      category: "Mascotas",
+      image: "collar_antipulgas.jpg"
+    },
+    {
+      title: "Cepillo de Dientes para Perros",
+      price: 6.50,
+      description: "Cepillo de dientes y pasta dental para la salud bucal de los perros.",
+      category: "Mascotas",
+      image: "cepillo_dientes_perros.jpg"
+    },
+    {
+      title: "Arenero para Gatos con Filtro de Carbón",
+      price: 27.99,
+      description: "Arenero amplio con filtro de carbón para reducir olores indeseados.",
+      category: "Mascotas",
+      image: "arenero_gatos.jpg"
+    },
+    {
+      title: "Pelota de Juguete Duradera para Perros",
+      price: 12.99,
+      description: "Pelota resistente para perros que disfrutan de juegos de lanzamiento y recuperación.",
+      category: "Mascotas",
+      image: "pelota_duradera_perros.jpg"
+    },
+    {
+      title: "Cepillo Quitapelos para Gatos",
+      price: 14.50,
+      description: "Cepillo especializado para eliminar el pelo suelto de los gatos.",
+      category: "Mascotas",
+      image: "cepillo_quitapelos_gatos.jpg"
+    }
+  
+  ]);
+  
