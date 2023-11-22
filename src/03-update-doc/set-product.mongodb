@@ -1,0 +1,119 @@
+// set-product.mongodb
+
+use("pet_store")
+
+db.products.updateOne(
+  // query
+  {_id: 1},
+  // change => operators
+  {
+    $set: {
+      name: 'Change name',
+      price: 3000,
+    }
+  }
+)
+
+db.products.updateOne(
+  { title: 'Collar Acolchado para Perros' }, // Filtro por título
+  {
+    $set: {
+      price: 4000,
+      image: 'collar_perros.png'
+    }
+  }
+)
+
+db.products.updateOne(
+  { title: 'Comedero Automático para Gatos' }, // Filtro por título
+  {
+    $set: {
+      price: 5000,
+      image: 'comedero_gatos_perros.jpg'
+    }
+  }
+)
+
+db.products.updateOne(
+  { title: 'Juguete Interactivo para Perros' }, // Filtro por título
+  {
+    $set: {
+      price: 6000,
+      image: 'juguete_pyg.png'
+    }
+  }
+)
+
+db.products.updateOne(
+  { title: 'Arnés Reflectante para Caminatas Nocturnas' }, // Filtro por título
+  {
+    $set: {
+      price: 7000,
+      image: 'arnes.jpg'
+    }
+  }
+)
+
+db.products.updateOne(
+  { title: 'Cama Suave para Gatos' }, // Filtro por título
+  {
+    $set: {
+      price: 8000,
+      image: 'cama_para_gatos.png'
+    }
+  }
+)
+
+db.products.updateOne(
+  { title: 'Rascador para Gatos de Altura' }, // Filtro por título
+  {
+    $set: {
+      price: 10000,
+      image: 'rascador_para_gatos.jpg'
+    }
+  }
+)
+
+db.products.updateOne(
+  { title: 'Correa Retráctil para Paseos' }, // Filtro por título
+  {
+    $set: {
+      price: 11000,
+      image: 'correa_para_perros.jpg'
+    }
+  }
+)
+
+db.products.updateOne(
+  { title: 'Juguete Peluche para Gatos' }, // Filtro por título
+  {
+    $set: {
+      price: 12000,
+      image: 'peluche_gatos.jpg'
+    }
+  }
+)
+
+db.products.updateOne(
+  { title: 'Transportín Portátil para Mascotas' }, // Filtro por título
+  {
+    $set: {
+      price: 13000,
+      image: 'transportin_para_mascotas.jpg'
+    }
+  }
+)
+
+db.products.updateOne(
+  { title: 'Cepillo Quitapelos para Gatos y perros' }, // Filtro por título
+  {
+    $set: {
+      price: 14000,
+      image: 'cepillo_para_gatos_perros.png'
+    }
+  }
+)
+
+
+
+
